@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header Section */
+header.hero {
+  background: linear-gradient(to right, #007acc, #005b99);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.tagline {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.contact {
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+/* Card Sections */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+  color: #004f87; /* darker for better contrast */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.job h3 {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+  background-color: #e6f0fa;
+  margin-top: 40px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005b99;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.delay1 { animation-delay: 0.3s; }
+.delay2 { animation-delay: 0.6s; }
+.delay3 { animation-delay: 0.9s; }
+.delay4 { animation-delay: 1.2s; }
+.delay5 { animation-delay: 1.5s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .tagline, .contact {
+    font-size: 1em;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.95em;
+  }
+}
